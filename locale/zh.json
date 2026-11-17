@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "DeepSeek 媒体工具",
+    "description": "把 DeepSeek 的 OCR、语音识别与语音合成做成 agent 工具。"
+  },
+  "nav": "DeepSeek 媒体",
+  "settings": {
+    "title": "DeepSeek 媒体工具",
+    "intro": "配置 deepseek_ocr、deepseek_asr、deepseek_tts 三个 agent 工具使用的 API key。",
+    "keyStatus": "API key",
+    "keyConfigured": "已配置（来源：{source}）",
+    "keyMissing": "未配置 —— 未设置 key 前三个工具不会出现在工具列表里",
+    "keyPlaceholder": "粘贴 DeepSeek API key（sk-…）",
+    "save": "保存 key",
+    "clear": "清除已存 key",
+    "saved": "已保存。新会话立即可用这三个工具。",
+    "cleared": "已清除存储的 key。",
+    "source": {
+      "credential-store": "凭据库",
+      "environment": "环境变量"
+    },
+    "privacy": "key 通过 DSH 凭据服务存储，不会写入日志，也不会被任何工具返回。",
+    "doc": "计费说明：OCR 按页计费，ASR 按音频秒数计费，TTS 按万计费字符计费（汉字按 2 个字符计）。",
+    "errorPrefix": "请求失败"
+  }
+}

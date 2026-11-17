@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "DeepSeek media tools",
+    "description": "Agent tools for DeepSeek OCR, ASR and TTS."
+  },
+  "nav": "DeepSeek media",
+  "settings": {
+    "title": "DeepSeek media tools",
+    "intro": "Configure the API key used by the deepseek_ocr, deepseek_asr and deepseek_tts agent tools.",
+    "keyStatus": "API key",
+    "keyConfigured": "Configured (source: {source})",
+    "keyMissing": "Not configured — the three tools stay hidden until a key is set",
+    "keyPlaceholder": "Paste a DeepSeek API key (sk-…)",
+    "save": "Save key",
+    "clear": "Clear stored key",
+    "saved": "Key saved. The tools are available in new sessions immediately.",
+    "cleared": "Stored key removed.",
+    "source": {
+      "credential-store": "credential store",
+      "environment": "environment variable"
+    },
+    "privacy": "The key is stored through the DSH credentials service and is never logged or returned by any tool.",
+    "doc": "Billing note: OCR is charged per page, ASR per second of audio, TTS per 10k billable characters (CJK counts double).",
+    "errorPrefix": "Request failed"
+  }
+}
