@@ -24,7 +24,7 @@ Settings → **DeepSeek media** shows whether a key is configured and where it c
 - The key is only read through `ctx.credentials` (with a launch-environment fallback), never from disk, never logged, never embedded in an error message, and never returned by a tool — failure text additionally passes a `sk-…` redaction pass.
 - Every file path is resolved through the host's own `fs`/`workingDirectory` services and then pinned inside the session workspace by realpath containment: `../` traversal, absolute paths outside the workspace, and symlinks escaping the workspace all fail closed.
 - Size/duration/billing limits are enforced locally before any upload or request is made.
-- The settings routes only ever expose key *presence*; writes reject cross-origin `Origin` headers.
+- The settings routes register on the Host's authenticated `connection.fetch` surface, so they sit behind the same launch-token cookie and Host/Origin fence as DSH's own APIs — a bare local `curl` cannot reach them, let alone write a credential.
 - No shell, no install-time scripts, no dynamic remote imports.
 
 ## Install
